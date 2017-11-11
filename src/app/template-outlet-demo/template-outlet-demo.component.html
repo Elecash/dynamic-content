@@ -1,0 +1,17 @@
+<!--h1>Custom List One</h1>
+<app-custom-list [items]="items">
+    <ng-template let-item="item">
+        <h2 class="red">{{ item.title }}</h2>
+        <strong>{{ item.speaker }}</strong>
+    </ng-template>
+</app-custom-list-->
+
+
+<h1>Custom List Two</h1>
+<app-custom-list [items]="items">
+    <ng-template let-item="item">
+        <h3 class="blue">{{ item.title }}</h3>
+        <strong>{{ item.speaker }}</strong>
+        <p>{{ item.description }}</p>
+    </ng-template>
+</app-custom-list>

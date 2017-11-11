@@ -1,0 +1,7 @@
+<ul>
+    <li *ngFor="let item of items">
+        <ng-template [ngTemplateOutlet]="renderer"
+                     [ngTemplateOutletContext]="{item: item}">
+        </ng-template>
+    </li>
+</ul>
